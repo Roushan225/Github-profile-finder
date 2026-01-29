@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1ea1283ee6.js" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    .img{
+      border-radius: 15px 0px 0px 15px;
+      z-index:2;
+    }
+    .hero{
+      border-radius: 0px 15px 15px 15px;
+    }
+    .footer{
+      border-radius: 0px 0px 15px 0px;
+    }
+
+  </style>
+  <body class="bg-purple-300 flex ">
+    <div class="w-full h-[100vh] place-items-center  mx-auto bg-slate-900 relative">
+      <div class="h-[60vh] w-[70vw]  bg-slate-900 top-40 flex justify-center relative" >
+        <input type="text" class="inputbox h-16 rounded-md w-[100%] text-3xl absolute placeholder:text-2xl" placeholder="Search Github username....">
+        <button class="absolute bg-blue-700 p-4 px-8 mt-1 right-1 rounded-2xl my-auto  searchbtn">Search</button>
+        <div class="h-[60vh] w-[70vw] bg-gray-800 absolute top-24 rounded-4xl ">
+          <div class="img absolute bg-gray-100 left-0 h-full w-[25%] rounded-4xl">
+            <div class="absolute h-44 w-48 rounded-[50%] left-3 top-6 bg-transparent ">
+              <img src="" class="profile-pic absolute h-44 w-48 rounded-[50%]">
+            </div>
+            
+          </div>
+          <div class="absolute h-full w-[75%] bg-gray-100 right-0 hero">
+            <p class="username text-4xl absolute left-16 top-12"></p>
+            <p class="joined absolute right-16 text-black top-14  font-bold text-lg">Joined 25 jan </p>
+            <p class="id top-36 left-16 absolute"> </p>
+            <div class="absolute w-[80%] h-[20%] bg-black mx-20 flex justify-around items-center top-48 rounded-xl">
+              <div class="text-white">
+                <h3>Repos</h3>
+                <h3 class="text-3xl repos"></h3>
+              </div>
+              <div class="text-white">
+                <h3>Followers</h3>
+                <h3 class="text-3xl Followers"></h3>
+              </div>
+              <div class="text-white">
+                <h3>Following</h3>
+                <h3 class="text-3xl Following"></h3>
+              </div>
+
+            </div>
+            <div class="absolute bottom-0 bg-gray-100  items-center py-10 flex justify-around w-[100%] h-[30%] footer">
+              <div class="flex text-2xl items-center absolute bottom-3 right-[230px] ">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="place ml-3">Ranchi</p>
+              </div>
+              <div class="flex text-2xl items-center relative bottom-9">
+                <i class="fa-brands fa-twitter"></i>
+                <p class="twitter ml-3"> Twitter</p>
+              </div>
+              <div class="flex text-2xl items-center relative bottom-9">
+                <i class="fa-solid fa-link"></i>
+                <p class="gitlink ml-3">git link</p>
+              </div>
+              
+
+            </div>
+            </div>
+
+      </div>
+      </div>
+      
+
+
+    </div>
+
+  </body>
+ 
+  <script src="github.js"></script>
+</html>
